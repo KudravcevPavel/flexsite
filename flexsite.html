@@ -72,12 +72,15 @@
         .content {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: row;
         }
 
         .side {
             flex: 30%;
             background-color: #f1f1f1;
             padding: 20px;
+            width: auto;
+            height: 100%;
         }
 
         .main {
@@ -90,16 +93,19 @@
             background-color: #aaa;
             width: 100%;
             padding: 20px;
+            height: 100%;
         }
 
         .bigimg {
             height: 200px;
             background-image: url(https://picsum.photos/id/1038/1200/200);
+            
         }
 
         .smallimg {
             height: 60px;
-            background-image: url(image/sss.png)
+            background-image: url(image/sss.png);
+            
         }
 
         .footer {
@@ -108,7 +114,7 @@
             background: #ddd;
         }
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 700px) and (min-width: 400px) {
 
             .content,
             .navbar {
